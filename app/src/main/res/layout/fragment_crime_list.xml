@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 <android.support.v7.widget.RecyclerView
     android:id="@+id/crime_recycler_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:background="@color/colorListBackground"
+    />
+
+    <ImageButton
+        android:id="@+id/new_crime"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/plus_add_green" />
+</RelativeLayout>

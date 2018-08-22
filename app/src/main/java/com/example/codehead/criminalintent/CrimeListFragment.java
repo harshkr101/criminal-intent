@@ -13,13 +13,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
 public class CrimeListFragment extends Fragment {
-
+    private ImageButton mAddCrime;
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
     private boolean mSubtitleVisible;
@@ -35,6 +36,16 @@ public class CrimeListFragment extends Fragment {
         if (savedInstanceState!=null){
             mSubtitleVisible=savedInstanceState.getBoolean(SAVED_SUBTITLE_VISIBLE);
         }
+        mAddCrime=view.findViewById(R.id.new_crime);
+        mAddCrime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Crime crime=new Crime();
+                CrimeLab.get(getActivity()).addCrime(crime);
+                Intent intent=CrimePagerActivity.newIntent(getActivity(),crime.getId());
+                startActivity(intent);
+            }
+        });
         updateUI();
         return view;
     }
@@ -60,12 +71,12 @@ public class CrimeListFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
-            case R.id.new_crime:
+            /*case R.id.new_crime:
                 Crime crime=new Crime();
                 CrimeLab.get(getActivity()).addCrime(crime);
                 Intent intent=CrimePagerActivity.newIntent(getActivity(),crime.getId());
                 startActivity(intent);
-                return true;
+                return true;*/
 
             case R.id.show_subtitle:
                 mSubtitleVisible=!mSubtitleVisible;
