@@ -1,9 +1,9 @@
 # Criminal_Intent
 A simple android app to report crimes in your area/company.
-# UI by ![Ankit Jadli](https://github.com/ankitjadli/)
+# UI 
 
-![Splash screen](https://github.com/harshcto/Criminal_Intent/blob/master/app/src/main/res/splash.png)
-![Splash screen2](https://github.com/harshcto/Criminal_Intent/blob/master/app/src/main/res/spl.png)
-![Crime database](https://github.com/harshcto/Criminal_Intent/blob/master/app/src/main/res/crime_database.png)
-![Crime details](https://github.com/harshcto/Criminal_Intent/blob/master/app/src/main/res/crime_details.png)
+![criminalintentmokeup 2x](https://user-images.githubusercontent.com/37221963/44627373-8347e080-a94a-11e8-9505-a0abf829d4d2.png)
 
+## Get the UI Kit - [Google_drive_link](https://drive.google.com/open?id=173grs8wiR77a5APWdhPCWZkveRkDQMzf)
+
+#### UI By [Ankit Jadli](https://github.com/ankitjadli)
