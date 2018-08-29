@@ -22,6 +22,6 @@
     <string name="crime_report_no_suspect">no hay sospechoso.</string>
     <string name="crime_report_suspect">el/la sospechoso/a es %s.</string>
     <string name="crime_report_subject">IntentoCriminal Informe del Crimen</string>
-    <string name="send_report">Enviar el informe del crimen a través de</string>
-    
+    <string name="send_report">Enviar el informe del crimen a través de </string>
+
 </resources>
