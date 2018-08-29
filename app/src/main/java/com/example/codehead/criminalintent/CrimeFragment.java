@@ -1,6 +1,5 @@
 package com.example.codehead.criminalintent;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -32,7 +31,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-import static android.widget.CompoundButton.*;
+import static android.widget.CompoundButton.OnCheckedChangeListener;
+import static android.widget.CompoundButton.OnClickListener;
 
 public class CrimeFragment extends Fragment {
 
