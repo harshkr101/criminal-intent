@@ -8,6 +8,7 @@ public class Crime {
 
     private UUID mId;
     private String mTitle;
+   //private String mDetails;
     private Date mDate;
     private boolean mSolved;
     private String mSuspect;
@@ -57,4 +58,12 @@ public class Crime {
     public String getPhotoFileame(){
         return "IMG_" + getId().toString() +".jpg";
     }
+
+    /*public String getDetails() {
+        return mDetails;
+    }
+
+    public void setDetails(String details) {
+        mDetails = details;
+    }*/
 }

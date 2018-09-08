@@ -2,70 +2,61 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/details">
-
-
-    <ImageView
-        android:id="@+id/crime_photo"
-        android:layout_width="114dp"
-        android:layout_height="95dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="79dp"
-        android:background="@drawable/photo"
-        android:cropToPadding="true"
-        android:scaleType="fitXY" />
-
+    android:background="@color/back"
+   >
     <ImageButton
         android:id="@+id/crime_camera"
-        android:layout_width="41dp"
-        android:layout_height="38dp"
-        android:layout_below="@+id/crime_photo"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/cam" />
-
-    <TextView
+        android:layout_below="@id/clickimage"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/camerareturns" />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_centerVertical="true"
-        android:text="@string/crime_title_label"
-        android:textColor="#848fa3" />
+        android:src="@drawable/clickimage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/clickimage"/>
+
+    <ImageView
+        android:src="@drawable/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/clickimage"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/crimetitle"
+
+    />
 
     <EditText
         android:id="@+id/crime_title"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
+     android:layout_below="@+id/clickimage"
         android:layout_marginEnd="42dp"
-        android:hint="@string/crime_title_hint"
-        android:textColor="#000000" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/crime_title"
-        android:text="@string/crime_details_label"
+        android:hint="@string/crime_title_hint"
         android:textColor="#000000" />
 
     <Button
         android:id="@+id/crime_date"
         android:layout_width="202dp"
         android:layout_height="38dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/crime_title"
-        android:layout_marginBottom="135dp"
-        android:background="@drawable/date" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="-182dp"
+        android:background="@drawable/daterec" />
 
     <CheckBox
         android:id="@+id/crime_solved"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/crime_date"
+        android:layout_marginTop="30dp"
         android:layout_alignStart="@+id/crime_date"
-        android:layout_marginBottom="85dp"
         android:text="@string/crime_solved_label" />
 
     <Button
@@ -86,24 +77,40 @@
         android:background="@drawable/button2"
         android:text="@string/crime_report_text" />
 
-    <TextView
+    <ImageView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/crime_date"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="62dp"
-        android:text="@string/date"
-        android:textColor="#848fa3"
-        android:textSize="14sp" />
+        android:layout_marginBottom="147dp"
+        android:layout_marginStart="34dp"
+        android:src="@drawable/crimedate" />
 
-    <TextView
+    <ImageView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
         android:layout_alignTop="@+id/crime_solved"
-        android:text="@string/status"
-        android:textColor="#848fa3" />
+        android:src="@drawable/crimestatus" />
+    <ImageView
+        android:id="@+id/crime_photo"
+        android:layout_width="114dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/photo"
+        android:cropToPadding="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/clickimage"
+        android:layout_marginBottom="182dp"
+        android:text="Details" />
 
 </RelativeLayout>

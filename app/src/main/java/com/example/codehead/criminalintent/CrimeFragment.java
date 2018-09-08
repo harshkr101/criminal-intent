@@ -45,6 +45,7 @@ public class CrimeFragment extends Fragment {
 
     private Crime mCrime;
     private EditText mTitleField;
+    //private EditText mDetailsField;
     private Button mDateButton;
     private CheckBox mSolvedCheckbox;
     private Button mReportButton;
@@ -92,7 +93,24 @@ public class CrimeFragment extends Fragment {
 
             }
         });
+     /*   mDetailsField=v.findViewById(R.id.crime_details);
+        mDetailsField.setText(mCrime.getDetails());
+        mDetailsField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mCrime.setDetails(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });*/
         mDateButton = v.findViewById(R.id.crime_date);
         updateData();
         mDateButton.setOnClickListener(new View.OnClickListener(){

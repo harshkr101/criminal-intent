@@ -13,9 +13,9 @@
 
     <ImageButton
         android:id="@+id/new_crime"
-        android:layout_width="67dp"
-        android:layout_height="66dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/plus1" />
+        android:background="@drawable/addcrime" />
 </RelativeLayout>
